@@ -1,0 +1,18 @@
+/* global css */
+.text-white {
+	color: #ffffff;
+}
+
+/* Intro Section */
+.intro { 
+	background: url(../img/Picture_Background.png) no-repeat center center;
+	background-size: cover; 
+	height: 75vh;
+}
+.logo {
+	padding-top: 10em;
+}
+
+.intro h2 {
+	padding: 2em;
+}
