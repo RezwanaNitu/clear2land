@@ -1,18 +1,49 @@
 /* global css */
+* {
+	font-family: 'Roboto', sans-serif;
+}
 .text-white {
 	color: #ffffff;
 }
+.text-bold {
+	font-weight: bold;
+}
+.btn-appstore{ display: inline-block; margin-left: 8em; background-color: black; padding: 8px 12px; border-radius: 6px; margin-top: 25px; }
+.btn-appstore img{ width: 125px;  }
+
 
 /* Intro Section */
 .intro { 
 	background: url(../img/Picture_Background.png) no-repeat center center;
-	background-size: cover; 
-	height: 75vh;
+	background-size: cover;
+	height: 50vh;
 }
 .logo {
-	padding-top: 10em;
+	padding-top: 2em;
 }
+.logo img { padding-top: 4em; width: 150px; }
+.logo .logo-name { padding: 0; text-align: center; font-size: 1.5em; margin-top: 0; }
 
-.intro h2 {
-	padding: 2em;
+.intro .headline{
+	text-align: center;
+	font-size: 2em;
+	color: white;
+	font-weight: bold;
+	padding-left: 8em;
 }
+.services { margin: 0 auto; }
+
+.intro-menu{ padding-bottom: 1.5em; }
+.intro-menu .icon{ color: #3b5998; }
+.intro-menu .icon:hover{ color: #1d2a5b; }
+
+/* section-user */
+.section-user { border-top: 3px dashed #000000; border-bottom: 3px dashed #000000; }
+.thumbnail{ margin-top: 20px; box-shadow: 0 0 4px rgba(0,0,0,.6); width: 300px; }
+.thumbnail img { width: 250px; margin-top: 20px;  }
+.thumbnail .instagram { color: white; background-color: #585353; padding: 5px 6px; border-radius: 50%; }
+.thumbnail .youtube { color: white; background-color: red; padding: 5px 6px; border-radius: 50%; }
+
+.icon{ margin-bottom: 15px; color: white; }
+
+footer.navbar{ margin-bottom: 0 !important;  }
