@@ -11,15 +11,23 @@
 	box-sizing: border-box;
 	padding: 6em 0 4em 0;
 }
+
+.intro .logo { padding-top: 5em; }
 .intro .headline{
 	text-align: center;
 	font-size: 3em;
+	padding-left: 2.2em;
 	color: white;
 	font-family: 'Sedgwick Ave Display', cursive;
 	margin-top: 1em;
 }
 .intro .btn-appstore{ 
-	display: inline-block; background-color: black; padding: 8px 12px; border-radius: 6px; margin-top: 25px; 
+	display: inline-block; 
+	background-color: black; 
+	padding: 8px 12px; 
+	border-radius: 6px; 
+	margin-top: 5em; 
+	margin-left: 7em; 
 }
 .intro .btn-appstore img{ width: 125px; }
 .intro-menu{ padding-top: 3em; }
@@ -86,11 +94,25 @@ footer.navbar *{ color: rgb(0,0,0) !important; }
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
 
-@media screen and (max-width: 767px){ 
-	.intro{ height: 100vh; padding: 3em 0 2em 0; }
-	.intro .logo{ width: 100px; height: 100px; margin: 0 auto; }
-	.intro .headline{ margin-top: 3em; font-size: 2em; }
+/* Mobile Verticle Mode */
+@media screen and (max-width: 480px){ 
+	.intro{ height: 100vh; padding: 3.5em 0 2em 0; }
+	.intro .logo img { width: 100px; height: 100px; margin: 0 auto; }
+	.intro .headline{ margin-top: 2em; font-size: 1.2em; }
+	.intro .btn-appstore { padding: 8px 12px; border-radius: 6px; margin-top: 1.5em; margin-left: 2.5em; }
+	.intro .btn-appstore img { width: 75px; }
 }
+
+/* Mobile Horizontal Mode */
+@media (min-width: 481px ) and (max-width: 767px){
+	.intro{ height: auto; padding: 3em 0 2em 0; }
+	.intro .logo img { width: 120px; height: 120px; margin: 0 auto; }
+	.intro .headline{ margin-top: 2.8em; font-size: 1.7em; }
+	.intro .btn-appstore { padding: 8px 12px; border-radius: 6px; margin-top: .5em; margin-left: 5em; }
+	.section-user .user-col{ width: 300px !important; margin: 0 !important; float: left; }
+	/*.section-user .col-sm-offset-1{ width: 0 !important; padding:0 !important; margin: 0 !important; } */
+	.section-user .thumbnail{  width: 100% }
+} 
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
